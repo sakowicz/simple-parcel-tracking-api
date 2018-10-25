@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <title>Projekt z Aplikacji Mobilnych</title>
   <meta charset="utf-8">
@@ -20,7 +20,7 @@
 		  <div class="card-body">
 		    <blockquote class="blockquote mb-0">
 		      <p>Jest to serwis webowy, który udotępnia API do trackingu paczek.</p>
-		      <footer class="blockquote-footer">API jest dostępne pod adresem: <code>/api/parcel/{numer_paczki}</code></footer>
+		      <footer class="blockquote-footer">API jest dostępne pod adresem: <code>{{ url('/') }}/api/parcel/{numer_paczki}</code></footer>
 		    </blockquote>
 		    <p class="mt-5">Numery paczek w serwisie, które można śledzić:</p>
 		    <ul class="list-group list-group-flush">
@@ -32,7 +32,7 @@
 	</div>
 </div>
 <footer class="footer">
-      <div class="container">
+      <div class="container text-right">
         <span class="text-muted">&copy Szymon Sakowicz</span>
       </div>
     </footer>
