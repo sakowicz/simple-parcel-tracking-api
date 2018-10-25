@@ -8,8 +8,7 @@ use App\Parcel;
 class HomeController extends Controller
 {
     public function index() {
-        $parcels = Parcel::firstOrfail();
-        $statuses = $parcels->statuses()->get();
-        return view('home', compact('parcels', 'statuses'));
+        $parcels = Parcel::all();
+        return view('home', compact('parcels'));
     }
 }

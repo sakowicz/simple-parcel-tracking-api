@@ -13,10 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-
-Route::get('parcels/', 'ParcelController@index');
 Route::get('parcel/{number}', 'ParcelController@show');
