@@ -13,8 +13,9 @@ class ParcelController extends Controller
     
     public function show($number)
     {
-        $parcel = Parcel::where('number', $number)->firstOrFail();
-        //$parcel->statuses = $parcel->statuses();
+    
+            $parcel = Parcel::where('number', $number)->first();
+            if (!$parcel) $parcel = Parcel::where('number', 404)->firstOrFail();
 
         return new ParcelResource($parcel);
     }
