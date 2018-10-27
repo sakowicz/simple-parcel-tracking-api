@@ -8,7 +8,7 @@ use App\Parcel;
 class HomeController extends Controller
 {
     public function index() {
-        $parcels = Parcel::all();
+        $parcels = Parcel::where('id', '!=', 404)->get();
         return view('home', compact('parcels'));
     }
 }
