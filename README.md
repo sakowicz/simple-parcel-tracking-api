@@ -1,5 +1,5 @@
 # simple-parcel-tracking-api
-Laravel Api made for university project to comunicate with mobile app and to respond to mobile request with parcel statuses.
+Simple Laravel application with API that has been made for university project to communicate with mobile app and to respond to mobile request with parcel statuses.
 # Live version
 Project is deployed on [tracking.sakowi.cz](http://tracking.sakowi.cz/).
 # API
