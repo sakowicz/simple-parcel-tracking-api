@@ -24,8 +24,8 @@
 		    </blockquote>
 		    <blockquote class="blockquote m-2 mt-5">
 		      <p>Kody źródłowe aplikacji dostępne na githubie.</p>
-		      <a class="btn btn-primary" role="button" href="https://github.com/sakowicz/simple-parcel-tracking-android-app">Aplikacja webowa</a>
-		      <a class="btn btn-secondary" role="button" href="https://github.com/sakowicz/simple-parcel-tracking-api">Aplikacja mobilna</a>
+		      <a class="btn btn-primary" role="button" href="https://github.com/sakowicz/simple-parcel-tracking-api">Aplikacja webowa</a>
+		      <a class="btn btn-secondary" role="button" href="https://github.com/sakowicz/simple-parcel-tracking-android-app">Aplikacja mobilna</a>
 		    </blockquote>
 
 
