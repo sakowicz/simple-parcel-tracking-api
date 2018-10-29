@@ -22,6 +22,13 @@
 		      <p>Jest to serwis webowy, który udotępnia API do trackingu paczek.</p>
 		      <footer class="blockquote-footer">API jest dostępne pod adresem: <code>{{ url('/') }}/api/parcel/{numer_paczki}</code></footer>
 		    </blockquote>
+		    <blockquote class="blockquote m-2 mt-5">
+		      <p>Kody źródłowe aplikacji dostępne na githubie.</p>
+		      <a class="btn btn-primary" role="button" href="https://github.com/sakowicz/simple-parcel-tracking-android-app">Aplikacja webowa</a>
+		      <a class="btn btn-secondary" role="button" href="https://github.com/sakowicz/simple-parcel-tracking-api">Aplikacja mobilna</a>
+		    </blockquote>
+
+
 		    <p class="mt-5">Numery paczek w serwisie, które można śledzić:</p>
 		    <ul class="list-group list-group-flush">
 		    	@foreach($parcels as $parcel)
