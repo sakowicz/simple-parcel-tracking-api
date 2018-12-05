@@ -19,7 +19,7 @@
 		  </div>
 		  <div class="card-body">
 		    <blockquote class="blockquote mb-0">
-		      <p>Jest to serwis webowy, który udotępnia API do trackingu paczek.</p>
+		      <p>Jest to serwis webowy, który udostępnia API do trackingu paczek.</p>
 		      <footer class="blockquote-footer">API jest dostępne pod adresem: <code>{{ url('/') }}/api/parcel/{numer_paczki}</code></footer>
 		    </blockquote>
 		    <blockquote class="blockquote m-2 mt-5">

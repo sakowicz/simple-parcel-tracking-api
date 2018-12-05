@@ -12,7 +12,6 @@ class ParcelController extends Controller
     {
         $parcel = Parcel::where('number', $number)->first();
         if (!$parcel) {
-            
             $statuses = collect();
             $statuses->push([
                 "title" => "Nie ma takiej przesyłki",
