@@ -19,6 +19,9 @@ class ParcelController extends Controller
             $parcel->sender = "";
             $parcel->statuses = array(
                 "title" => "Nie ma takiej przesyłki",
+                "description" => "",
+                "location" => "",
+                "created_at" => "",
             );
         }
 
