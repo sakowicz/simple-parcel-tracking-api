@@ -12,6 +12,6 @@ class Status extends Model
 
     public function parcels()
     {
-        return $this->belongsToMany('App\Parcel', 'parcel_status');
+        return $this->belongsTo('App\Parcel');
     }
 }

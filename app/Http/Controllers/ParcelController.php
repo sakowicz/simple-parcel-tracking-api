@@ -2,19 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Recuests;
-use App\Parcel;
 use App\Http\Resources\Parcel as ParcelResource;
-
+use App\Parcel;
 
 class ParcelController extends Controller
 {
-    
+
     public function show($number)
     {
         $parcel = Parcel::where('number', $number)->first();
-        if (!$parcel) $parcel = Parcel::where('id', 404)->firstOrFail();
+        if (!$parcel) {
+            $parcel = collect();
+            $parcel->id = "";
+            $parcel->number = "";
+            $parcel->address = "";
+            $parcel->sender = "";
+            $parcel->statuses = array(
+                "title" => "Nie ma takiej przesyłki",
+            );
+        }
 
         return new ParcelResource($parcel);
     }

@@ -14,13 +14,21 @@ class Parcel extends JsonResource
      */
     public function toArray($request)
     {
-        //return parent::toArray($request);
+        if (!$this->number) {
+            return [
+                'number' => $this->number,
+                'sender' => $this->sender,
+                'address' => $this->address,
+                'address' => $this->statuses,
+            ];
+        } else {
+            return [
+                'number' => $this->number,
+                'sender' => $this->sender,
+                'address' => $this->address,
+                'statuses' => $this->statuses()->get(),
+            ];
+        }
 
-        return [
-            'number' => $this->number,
-            'sender' => $this->sender,
-            'address' => $this->address,
-            'statuses' => $this->statuses()->get()
-        ];
     }
 }

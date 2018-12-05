@@ -12,6 +12,6 @@ class Parcel extends Model
 
     public function statuses()
     {
-        return $this->belongsToMany('App\Status','parcel_status');
+        return $this->HasMany('App\Status');
     }
 }
