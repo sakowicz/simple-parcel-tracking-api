@@ -19,7 +19,7 @@ class Parcel extends JsonResource
                 'number' => $this->number,
                 'sender' => $this->sender,
                 'address' => $this->address,
-                'address' => $this->statuses,
+                'statuses' => $this->statuses,
             ];
         } else {
             return [
