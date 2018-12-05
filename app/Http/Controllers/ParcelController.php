@@ -12,17 +12,20 @@ class ParcelController extends Controller
     {
         $parcel = Parcel::where('number', $number)->first();
         if (!$parcel) {
+            
+            $statuses = collect();
+            $statuses->push([
+                "title" => "Nie ma takiej przesyłki",
+                "description" => "",
+                "location" => "",
+                "created_at" => "",
+            ]);
             $parcel = collect();
             $parcel->id = "";
             $parcel->number = "";
             $parcel->address = "";
             $parcel->sender = "";
-            $parcel->statuses = array(
-                "title" => "Nie ma takiej przesyłki",
-                "description" => "",
-                "location" => "",
-                "created_at" => "",
-            );
+            $parcel->statuses = $statuses;
         }
 
         return new ParcelResource($parcel);
